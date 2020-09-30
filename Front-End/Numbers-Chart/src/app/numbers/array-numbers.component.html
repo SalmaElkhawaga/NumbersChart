@@ -1,0 +1,20 @@
+ <div class="chart-container">
+        <div class="vertical" >
+            <span *ngFor="let number of verticalPoints" >
+            {{number}}
+            </span>
+        </div>
+
+        <div class="horizontal" >
+            <div class="point" *ngFor="let number of arrayNumbers">
+                <span class="value-number">{{number.number}}
+                </span>
+                <span class="value" style.height.px ="{{getHeight(number.number)}}">
+                </span>
+                <span  class="creation-date">
+                    {{number.creationDate | date: "h: mm" }}
+                </span>
+            </div>
+        </div>
+</div> 
+

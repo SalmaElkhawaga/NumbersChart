@@ -1,0 +1,50 @@
+.chart-container{
+    display: flex;
+    align-items: flex-end;
+    border: ridge;
+    border-bottom-style: none;
+}
+
+
+.vertical{
+    width: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap:18px;
+    line-height: 10px;
+    padding: 0px 10px;
+    border-right: 2px solid black;
+}
+
+.horizontal{
+    width: max-content;
+    display: flex;
+    border-bottom: 2px solid black;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.point{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+.value{
+    /* height: 10px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+    background-color: blue;
+}
+
+.value-number{
+    margin-left: 11px;
+}
+
+.creation-date{
+    margin-bottom: -20px;
+}
